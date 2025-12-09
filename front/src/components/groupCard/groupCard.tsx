@@ -1,7 +1,7 @@
 import GroupCardStyled from "./groupCardStyled";
 import { HiMiniUserGroup } from "react-icons/hi2";
-import { PiBlueprintFill } from "react-icons/pi";
 import { FaFileCode } from "react-icons/fa";
+import { PiBlueprintFill } from "react-icons/pi";
 import ProjetoImage from "../../assets/images/exampleProject.jpg"
 
 

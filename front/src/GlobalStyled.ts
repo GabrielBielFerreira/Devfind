@@ -9,11 +9,15 @@ export const GlobalStyled = createGlobalStyle`
          
     }
 
-    h1, h2, h3, button, p {
+    h1, h2, h3, button, p, a {
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
         color: var(--primaryColor);
+    }
+
+    a {
+        text-decoration: none;
     }
 
     ul, li {
@@ -77,6 +81,10 @@ export const GlobalStyled = createGlobalStyle`
             position: relative;
             bottom: 0px;
             width: 100%;
+        }
+
+        .footerOff {
+            display: none;
         }
         
     }

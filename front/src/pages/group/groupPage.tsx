@@ -1,6 +1,6 @@
 import GroupPageStyled from "./groupPageStyled"
 import { FaSearch } from "react-icons/fa";
-import GroupCard from "../../components/groupCard/GroupCard";
+import GroupCard from "../../components/groupCard/groupCard";
 
 const GroupPage = () => {
 
@@ -13,6 +13,8 @@ const GroupPage = () => {
                     <input type="search" placeholder="Pesquisar grupo..." />
                 </div>
                 <ul className="groupList">
+                    <GroupCard/>
+                    <GroupCard/>
                     <GroupCard/>
                     <GroupCard/>
                     <GroupCard/>
