@@ -21,4 +21,22 @@
 
 [UV](https://docs.astral.sh/uv/)
 
-[Django](https://www.djangoproject.com/)
+[Flask](https://flask.palletsprojects.com)
+
+## Executando
+### Front
+Dentro da pasta `front`:
+
+Antes de executar pela primeira vez.
+
+`npm install`
+
+E para rodar o servidor de desenvolvimento.
+
+`npm run dev`
+### Back
+Dentro da pasta `back`:
+
+Para rodar a API de desenvolvimento.
+
+`uv run -m flask --app src/main run`
