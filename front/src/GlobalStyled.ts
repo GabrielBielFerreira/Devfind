@@ -9,7 +9,7 @@ export const GlobalStyled = createGlobalStyle`
          
     }
 
-    h1, h2, h3, button, p, a {
+    h1, h2, h3, button, p, a, label {
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
@@ -29,6 +29,7 @@ export const GlobalStyled = createGlobalStyle`
         --white-1: #fff;
         --blue: #4E8FD7;
         --gray: #E2E2E2;
+        --gray-2: #B2B2B2;
     }
 
     body {
@@ -84,6 +85,10 @@ export const GlobalStyled = createGlobalStyle`
         }
 
         .footerOff {
+            display: none;
+        }
+        
+        .headerOff {
             display: none;
         }
         

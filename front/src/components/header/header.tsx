@@ -7,9 +7,21 @@ import { Link, useLocation } from "react-router-dom";
 
 
 const Header = () => {
-    const [menu, setMenu] = useState<string>('menuOff')
+    const location = useLocation();
 
-       const location = useLocation();
+    const [headerStatus, setHeaderStatus] = useState<string>("footerOn")
+
+        useEffect(() => {
+        if (location.pathname == "/login" || location.pathname == "/register"){
+            setHeaderStatus("headerOff")
+        } else {
+            setHeaderStatus("headerOn")
+        }
+    
+  }, [location])
+
+
+    const [menu, setMenu] = useState<string>('menuOff')
 
     const [local, setLocal] = useState<string>("Home")
 
@@ -37,7 +49,7 @@ const Header = () => {
     }
 
     return (
-        <HeaderStyled>
+        <HeaderStyled className={`${headerStatus}`}>
             <img className="devFindLogo" src={logo} alt="Logo da DevFind" />
             {/* <nav className="navDefault"> */}
             <nav className={`${menu} navDefalt`}>

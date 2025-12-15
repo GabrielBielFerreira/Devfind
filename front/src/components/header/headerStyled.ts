@@ -10,8 +10,6 @@ export const HeaderStyled = styled.header`
     align-items: center;
     border-bottom: 4px solid var(--white-1);
 
-    /* box-shadow: 0px -15px 20px rgb(0, 0, 0, 0.25) inset; */
-
     .devFindLogo {
         object-fit: cover;
         height: 80px;
@@ -19,11 +17,8 @@ export const HeaderStyled = styled.header`
 
     }
 
-    
-
     nav {
         display: flex;
-        /* gap: 8px; */
 
         .buttonContainer {
             display: flex;
@@ -41,14 +36,13 @@ export const HeaderStyled = styled.header`
 
                 a {
                     color: var(--primaryColor);
-                    
                 }
             }
 
             a {
                 background-color: transparent;
                 border: none;
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: bold;
                 color: var(--white-1);
                 
@@ -62,13 +56,10 @@ export const HeaderStyled = styled.header`
     }
 
     @media (max-width: 800px) {
-        nav {
-           
+        nav {     
             .buttonContainer {
-                
                 a {
                     font-size: 18px;
-                    
                 }
             }
         }

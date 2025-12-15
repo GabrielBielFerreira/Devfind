@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const MiniCardGroupStyled = styled.li`
     width: 100%;
-    max-width: 400px;
+
     height: fit-content;
     border: solid 3px var(--gray);
     border-radius: 12px;
@@ -14,7 +14,7 @@ const MiniCardGroupStyled = styled.li`
     &:hover {
         transition: 0.5s;
         border-color: var(--blue);
-        transform: translateX(10px);
+        /* transform: translateX(10px); */
 
         .title {
             color: var(--blue);
